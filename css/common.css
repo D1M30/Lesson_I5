@@ -1,0 +1,91 @@
+
+/* ==================Кнопка======================= */
+.button{
+   background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+   border-radius: 4px;
+
+   font-weight: 700;
+   color: rgba(255, 255, 255, 1);   
+   line-height: 1.25;
+   letter-spacing: 0.5px;
+   text-align: center;
+
+   padding: 16px 40px;
+   display: inline-block;
+   position: relative;
+}
+
+.button span{
+   position: relative;
+   z-index: 2;
+}
+
+.button::before{
+   position:absolute ;
+   content: "";
+   width: 100%;
+   height: 100%;
+   border-radius: 4px;
+   opacity: 0;
+   left: 0;
+   top: 0;
+   transition: all 0.3s ease 0s;
+}
+
+.button:hover::before{
+  opacity: 1;
+  background: linear-gradient(55.95deg, #d42c26 0%, #ef7833 100%);
+
+}
+/* ======================================= */
+
+/* ==================Кнопка-прозрачная======================= */
+
+.button--border{
+   border: 1px solid  rgba(255, 63, 58, 1);
+   padding: 15px 39px;
+
+   background:transparent;
+   color: rgba(255, 63, 58, 1);
+
+   position: relative;
+
+   transition: all 0.3s ease 0s;
+}
+
+
+
+.button--border:hover{
+   background: rgba(255, 63, 58, 1);
+   color: rgba(255, 255, 255, 1);   
+
+}
+
+/* ======================================= */
+
+
+.list{
+max-width: 390px;
+}
+
+.list__item{
+   line-height: 160%;
+   color: rgba(66, 69, 81, 1);
+   position: relative;
+   padding-left:32px ;
+}
+
+.list__item:not(:last-child){
+   margin-bottom: 12px;
+}
+
+.list__item::before{
+   content: "";
+   position:absolute ;
+   background: url(../img/we-are/list-icon.png) no-repeat;
+   width: 16px;
+   height: 16px;
+   left: 0;
+   top: 5px;
+   
+}

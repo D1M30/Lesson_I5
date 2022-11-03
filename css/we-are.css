@@ -1,0 +1,71 @@
+.we-are-block {
+   position: relative;
+   padding:180px 0 ;
+}
+
+.we-are-block__content {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 15px;
+   position: relative;
+}
+
+.we-are-block__picture{
+   flex: 0 1 57%;
+   
+}
+.pic{
+   max-width: 100%;
+}
+
+.why-block{
+   flex: 0 1 31%;
+}
+
+.why-block__title {
+   color: rgba(30, 33, 44, 1);
+   margin-bottom: 40px;
+}
+
+.sub-title {
+   margin-bottom: 8px;
+   font-weight: 700;
+   line-height: 150%;
+   letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.title {
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 130%;
+}
+
+.why-block__list{
+   margin-bottom: 22px;
+}
+
+.decor-block{
+}
+
+.decor-block__item{
+position:absolute ;
+z-index: -1;
+}
+
+.decor-block__item--1{
+   background: url(../img/we-are/dots-2.svg)no-repeat;
+   width: 220px;
+   height: 220px;
+   top: 26%;
+   right: 94%;
+   
+}
+.decor-block__item--2{
+   background: url(../img/we-are/circles-2.svg)no-repeat;
+   width: 287px;
+   height: 287px;
+   top: 40%;
+   left: 93.6%;
+   
+}
